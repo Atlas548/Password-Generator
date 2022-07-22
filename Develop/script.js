@@ -38,6 +38,7 @@ function writePassword() {
     
     } if (!passwordLength) {
       window.alert(`please enter how many characters you would like in your password`);
+      return;
     
     } if (numberChars()) {
       passArray = passArray.concat(numberChars);
@@ -46,7 +47,7 @@ function writePassword() {
     } if (specialChars()) {
       passArray = passArray.concat(specialChars);
       console.log(passArray);
-      
+
     } if (lowerChars()) {
       passArray = passArray.concat(lowerChars);
       console.log(passArray);
@@ -58,7 +59,7 @@ function writePassword() {
     } console.log(passArray);
   }
 
-  for (var i = 0; i == writePassword; i++) {
+  for (var i = 0; i == passwordLength; i++) {
     var passRandom = Math.floor(Math.random() * passArray);
   }
 
