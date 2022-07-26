@@ -25,6 +25,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // Parameters of the generate password
 function generatePassword() {
+  passwordInput = [];
   var chooseLength = window.prompt("How many characters would you like your password? Choose between 8 and 128");
   console.log(chooseLength);
 
@@ -84,16 +85,11 @@ function generatePassword() {
     var randOptions = passwordChar[Math.floor(Math.random() * passwordChar.length)];
     passwordInput.push(randOptions);
   }
-  
+ 
   // sends the password to HTML 
   var password = passwordInput.join("");
   console.log(password);
-  reset();
   return password;
-
-
+  
 }
 
-function reset() {
-  var password = "";
-}
