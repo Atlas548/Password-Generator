@@ -88,7 +88,12 @@ function generatePassword() {
   // sends the password to HTML 
   var password = passwordInput.join("");
   console.log(password);
+  reset();
   return password;
 
 
+}
+
+function reset() {
+  var password = "";
 }
